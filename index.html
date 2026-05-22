@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Saya</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#020617;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 8%;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo{
+      font-size:35px;
+      font-weight:800;
+      line-height:1.1;
+      background:linear-gradient(to right,#4facfe,#f9d423);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#4facfe;
+    }
+
+    .hero{
+      padding:60px 8%;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:75px;
+      line-height:1.1;
+      font-weight:800;
+      margin-bottom:25px;
+    }
+
+    .gradient{
+      background:linear-gradient(to right,#4facfe,#f9d423);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      font-size:24px;
+      color:#cbd5e1;
+      line-height:1.8;
+      margin-bottom:50px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:20px 60px;
+      border-radius:50px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      font-size:24px;
+      font-weight:600;
+      box-shadow:0 0 35px rgba(37,99,235,0.7);
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    .card{
+      width:85%;
+      margin:80px auto;
+      background:#0f172a;
+      border-radius:35px;
+      padding:60px 30px;
+      text-align:center;
+      box-shadow:0 0 50px rgba(37,99,235,0.25);
+    }
+
+    .card h2{
+      font-size:80px;
+      margin-bottom:20px;
+      font-weight:800;
+    }
+
+    .card p{
+      font-size:22px;
+      color:#cbd5e1;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:52px;
+      }
+
+      .hero p{
+        font-size:20px;
+      }
+
+      .card h2{
+        font-size:55px;
+      }
+
+      header{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      nav a{
+        margin:0 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      Nama<br>Saya
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>
+      Halo, Saya <br>
+      <span class="gradient">Nama Kamu</span>
+    </h1>
+
+    <p>
+      Siswa TKJ yang sedang belajar <br>
+      Linux, Networking, DNS Server, <br>
+      Web Server, dan SSH.
+    </p>
+
+    <a href="#" class="btn">Explore More</a>
+  </section>
+
+  <div class="card">
+    <h2 class="gradient">TKJ</h2>
+    <p>
+      Teknik Komputer dan Jaringan
+    </p>
+  </div>
+
+  <footer>
+    © 2026 Portfolio Website
+  </footer>
+
+</body>
+</html>
